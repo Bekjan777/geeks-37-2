@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './components/Button';
 import User from './components/User';
+import Rate from "./components/Rate/Rate";
 
 const Text = () => {
     return <div>
@@ -14,11 +15,12 @@ function App() {
     <div className="App">
       <h1>hello</h1>
         <Text/>
-        <Button text={b}/>
-        <Button text={'open'}/>
-        <Button text={'close'}/>
-        <Button text={'edit'}/>
-        <User name={'Bakyt'} age={18} phone={468465165146}/>
+        <Button>{b}</Button>
+        <Button>close</Button>
+        <Button>edit</Button>
+        <Button>Hello World!</Button>
+        <User name={'Bekzhan'} age={14} phone={`+996 557 81 91 99`}/>
+        <Rate amount={5}/>
     </div>
   );
 }

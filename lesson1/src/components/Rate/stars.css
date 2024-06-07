@@ -1,0 +1,8 @@
+.stars{
+    /*width: 500px;*/
+    /*justify-content: space-between;*/
+    display: flex;
+    gap: 5px;
+    height: 50px;
+    justify-content: center;
+}
