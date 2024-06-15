@@ -5,12 +5,13 @@ import Example from '../../components/example/Example';
 import Modal from '../../components/modal/Modal';
 import Input from '../../components/input/Input';
 import Button from "../../components/Button";
-import List from "../../components/list/list";
+// import List from "../../components/list/list";
 import TodoList from "../../components/todoList/TodoList";
 
 
 const Main = () => {
     const [show, setShow] = useState(false)
+    const [regex, setRegex] = useState(/[a-zа-я]/gi)
     const [inputValue, setInputValue] = useState('')
     console.log(show, 'show');
     const [inputTask, setInputTask] = useState("")
@@ -75,6 +76,8 @@ const Main = () => {
         console.log(event.target.value)
         setInputValue(event.target.value)
         console.log(event.target.value)
+        setRegex(new RegExp(`${event.target.value}`, 'gi'))
+        console.log(regex)
     }
     const handleChangeTask = (event) => {
         console.log(event.target.value)
@@ -88,11 +91,19 @@ const Main = () => {
             title: inputTask,
             completed: false
         }]))
+        setInputTask("");
     }
     const handleDelete = (id) => {
         setTasks(prev =>
             prev.filter(item => item.id !== id))
     }
+
+    const search = (task) => {
+        return tasks.filter(task => task.title.match(regex))
+    }
+
+    const filtered = search()
+
     return (
         <>
             <h1>hello</h1>
@@ -110,17 +121,11 @@ const Main = () => {
 
             }
             <Input placeholder={'напишите текст'} onChange={handleChange}/>
-            <Input placeholder={'напишите текст'} onChange={handleChange}/>
-            <Input placeholder={'напишите текст'} onChange={handleChange}/>
-            <Input placeholder={'напишите текст'} onChange={handleChange}/>
-            <Input placeholder={'напишите текст'} onChange={handleChange}/>
             <h1 style={{fontSize: '20px', color: 'red'}}> {inputValue}</h1>
 
 
 
-            {/*<List list={tasks}/>*/}
-
-            <TodoList list={tasks} handleDelete={handleDelete}/>
+            <TodoList list={filtered} handleDelete={handleDelete}/>
 
 
 
