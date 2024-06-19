@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a1cb93-4149-4aac-bea3-67589ae5531d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/geeks-37-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/content/content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/content/content.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/example/Example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/input/input.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/list/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/list/list.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/modal/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/modal/modal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/todo/todo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/todo/todo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/todoList/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/todoList/todoList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/user/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/components/user/user.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/src/pages/main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson4/src/pages/counter/Counter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson3",
+    "git-widget-placeholder": "lesson4",
     "last_opened_file_path": "C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/lesson1/src/components/Rate",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -106,6 +76,7 @@
       <workItem from="1717742944073" duration="1352000" />
       <workItem from="1717744673114" duration="1217000" />
       <workItem from="1718197363859" duration="6727000" />
+      <workItem from="1718768722198" duration="461000" />
     </task>
     <servers />
   </component>
