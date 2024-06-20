@@ -1,0 +1,58 @@
+.bookList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 699px;
+}
+
+.bookList_{
+    display: flex;
+    gap: 20px;
+}
+.bookList_del{
+    padding-top: 3px;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+}
+
+.name{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    width: 699px;
+    height: 60px;
+}
+.p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+}
+.li{
+    display: flex;
+    /*gap: 20px;*/
+    width: 100%;
+}
+.btn{
+    cursor: pointer;
+    /*margin-top: 3px;*/
+    border: 1px solid #d4380d;
+    border-radius: 2px;
+    padding: 4px 15px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #d4380d;
+}
+
+
+.bookList_del li:nth-child(3n) {
+    margin-bottom: 12px;
+}
