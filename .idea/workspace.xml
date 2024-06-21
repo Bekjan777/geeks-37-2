@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a1cb93-4149-4aac-bea3-67589ae5531d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test1/src/components/bookList/BookList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/components/bookList/BookList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/components/button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/components/button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/components/input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/components/input/Input.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/pages/mainPage/MainPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/pages/mainPage/MainPage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1/src/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson5/src/pages/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/pages/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/pagonation/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/pagonation/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/pagonation/pagination.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/pagonation/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/todoList/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/todoList/TodoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson5/src/pages/todoPage/TodoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/pages/todoPage/TodoPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +95,7 @@
       <workItem from="1718768722198" duration="461000" />
       <workItem from="1718802239565" duration="7200000" />
       <workItem from="1718849497598" duration="9050000" />
+      <workItem from="1718976741653" duration="3052000" />
     </task>
     <servers />
   </component>

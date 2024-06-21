@@ -1,127 +1,155 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TodoList from '../../components/todoList/TodoList';
 import Input from '../../components/input/Input';
 import Button from '../../components/Button';
 import Modal from '../../components/modal/Modal';
 import Pagination from "../../components/pagonation/Pagination";
-
-
+import Select from "react-select";
 
 const TodoPage = () => {
-    const [ show, setShow ] = useState(false);
-    const [ inputTask, setInputTask ] = useState('');
-    const [ regex, setRegex ] = useState('');
-    const [ tasks, setTasks ] = useState([]);
-    console.log(show);
+    const [show, setShow] = useState(false);
+    const [inputTask, setInputTask] = useState('');
+    const [regex, setRegex] = useState('');
+    const [tasks, setTasks] = useState([]);
+    const [filteredTasks, setFilteredTasks] = useState([]);
+    const [true_, setTrue_] = useState(false);
+    const [offset, setOffset] = useState(0);
+    const limit = 10;
+    const BASE_URL = 'https://jsonplaceholder.typicode.com/';
+    const API = 'todos';
 
-    const handleShow = () => {
-        setShow(prev => !prev);
+    const HandleShow = () => {
+        setShow(!show);
     };
 
     const handleChangeSearch = (event) => {
-        console.log(event.target.value);
         setRegex(event.target.value);
     };
 
     const handleChangeTask = (event) => {
-        console.log(event.target.value);
         setInputTask(event.target.value);
     };
 
     const handleAdd = () => {
-        console.log('add');
-        setTasks(prev =>
-            [ ...prev, {
-                id: tasks.length > 0 ? tasks[ tasks.length - 1 ].id + 1 : 1,
-                title: inputTask,
-                completed: false
-            } ]);
+        const newTask = {
+            id: tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1,
+            title: inputTask,
+            completed: false
+        };
+        const updatedTasks = [...tasks, newTask];
+        setTasks(updatedTasks);
+        setFilteredTasks(updatedTasks);
     };
 
     const handleDone = (id) => {
-        console.log(id);
-        tasks.map(task => {
+        const updatedTasks = tasks.map(task => {
             if (task.id === id) {
-                return task.completed = !task.completed;
+                task.completed = !task.completed;
             }
+            return task;
         });
-        setTasks([ ...tasks ]);
+        setTasks(updatedTasks);
+        setFilteredTasks(updatedTasks);
     };
 
     const handleEdit = (text) => {
-        tasks.map(task => {
-            if (task.id === text.id) return task.title = text.title;
+        const updatedTasks = tasks.map(task => {
+            if (task.id === text.id) {
+                task.title = text.title;
+            }
+            return task;
         });
-        setTasks([ ...tasks ]);
-        console.log(text);
+        setTasks(updatedTasks);
+        setFilteredTasks(updatedTasks);
     };
+
     const handleDelete = (id) => {
-        setTasks(tasks.filter(task => task.id !== id));
+        const updatedTasks = tasks.filter(task => task.id !== id);
+        setTasks(updatedTasks);
+        setFilteredTasks(updatedTasks);
     };
 
     const searchTask = () => {
-        return tasks.filter(task => task.title.match(regex)) || [];
+        return filteredTasks.filter(task => task.title.match(regex)) || [];
     };
 
-    const filterTasks = searchTask();
-
-    //   useEffect(() => {
-    //     const myLocalStorage = JSON.parse(localStorage.getItem('tasks'));
-    //     if (myLocalStorage === null) {
-    //         return localStorage.setItem('tasks', JSON.stringify(tasks));
-    //     }
-    //     if (myLocalStorage.length !==0) {
-    //         setTasks(myLocalStorage)
-    //     }
-    // },[]);
-    //
-    // useEffect(()=> {
-    //     localStorage.setItem('tasks', JSON.stringify(tasks))
-    // },[tasks])
-    const BASE_URL = 'https://jsonplaceholder.typicode.com/'
-    const API = 'todos'
-    const limit=10
-    const [offset, setOffset] = useState(0)
-    const getApi = async() => {
-        const response = await fetch (`${BASE_URL}${API}/?_limit=${limit}&_start=${offset}`)
-        console.log(response);
-        const data= await response.json()
-        console.log(data);
-        return data
-    }
+    const getApi = async (shouldFetch) => {
+        if (!shouldFetch) {
+            const response = await fetch(`${BASE_URL}${API}/?_limit=${limit}&_start=${offset}`);
+            const data = await response.json();
+            setTasks(data);
+            setFilteredTasks(data);
+        } else {
+            setTasks([]);
+            setFilteredTasks([]);
+        }
+    };
 
     useEffect(() => {
-        getApi().then((data)=> setTasks(data))
+        const trueFromLocalStorage = JSON.parse(localStorage.getItem('true_'));
+        if (trueFromLocalStorage) {
+            setTrue_(trueFromLocalStorage);
+        } else {
+            getApi(false);
+        }
     }, [offset]);
 
-    const page = Math.floor(offset/limit)+1
-    console.log(page);
+    const page = Math.floor(offset / limit) + 1;
+
     const handlePrev = () => {
-        return setOffset(prev=> prev-limit)
-    }
+        setOffset(prev => prev - limit);
+    };
+
     const handleNext = () => {
-        return setOffset(prev=> prev+limit)
-    }
+        setOffset(prev => prev + limit);
+    };
+
+    const deleteAllTasks = () => {
+        setTasks([]);
+        setFilteredTasks([]);
+        localStorage.clear();
+        setTrue_(true);
+        localStorage.setItem('true_', JSON.stringify(true));
+    };
+
+    const options = [
+        { value: "all", label: "All tasks" },
+        { value: "uncompleted", label: "Uncompleted" },
+        { value: "completed", label: "Completed" }
+    ];
+
+    const handleChangeSelect = (selectedOption) => {
+        if (selectedOption.value === "uncompleted") {
+            setFilteredTasks(tasks.filter(task => !task.completed));
+        } else if (selectedOption.value === "completed") {
+            setFilteredTasks(tasks.filter(task => task.completed));
+        } else {
+            setFilteredTasks(tasks);
+        }
+    };
 
     return (
         <>
-            <Input placeholder={'поиск'} onChange={handleChangeSearch}/>
+            <Select onChange={handleChangeSelect} options={options} />
+            <Input placeholder={'поиск'} onChange={handleChangeSearch} />
 
-            <Button action={handleShow} text={'Открыть модалку'}/>
-            {
-                show && <Modal
-                    handleShow={handleShow}
+            <Button onclick={HandleShow}>Open modal</Button>
+            {show && (
+                <Modal
+                    action={HandleShow}
                     handleChangeTask={handleChangeTask}
                     handleAdd={handleAdd}
                 />
-            }
+            )}
             <TodoList
-                list={filterTasks}
+                list={searchTask()}
                 handleDelete={handleDelete}
                 handleDone={handleDone}
                 handleEdit={handleEdit}
             />
-            <Pagination prev={handlePrev} next={handleNext} page={page}/>
+            <Pagination true_={true_} prev={handlePrev} next={handleNext} page={page} />
+
+            <Button onclick={deleteAllTasks}>delete all tasks</Button>
         </>
     );
 };

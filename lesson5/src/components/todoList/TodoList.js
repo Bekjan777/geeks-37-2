@@ -10,7 +10,7 @@ const TodoList = ({ list, handleDelete,handleDone , handleEdit}) => {
                 {
                     list.length > 0 ? list.map(item => (
                         <Todo key={item.id} handleCurrentEdit={setCurrentEdit} isEdit={currentEdit===item.id} handleEdit={handleEdit} handleDone={handleDone} todo={item} handleDelete={handleDelete} />
-                    )) : `клава пуста`
+                    )) : `There are no tasks`
                 }
             </ul>
         </>
