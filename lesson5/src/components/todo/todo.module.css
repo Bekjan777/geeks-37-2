@@ -1,0 +1,16 @@
+.todo{
+    display: flex;
+    justify-content: center;
+    border:1px solid red;
+    padding: 10px;
+    width: 200px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+Button{
+    color: black;
+}
+.active{
+    text-decoration: line-through;
+    background-color: green;
+}

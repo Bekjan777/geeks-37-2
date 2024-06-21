@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a1cb93-4149-4aac-bea3-67589ae5531d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson4/src/pages/counter/Counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/pagonation/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/pagonation/Pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/pagonation/pagination.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/pagonation/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/components/todoList/TodoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/components/todoList/TodoList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/src/pages/todoPage/TodoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/src/pages/todoPage/TodoPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,30 +46,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson4",
-    "last_opened_file_path": "C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/lesson1/src/components/Rate",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/test1&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\test1" />
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src\components\Rate" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src\components\Rate" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,6 +93,9 @@
       <workItem from="1717744673114" duration="1217000" />
       <workItem from="1718197363859" duration="6727000" />
       <workItem from="1718768722198" duration="461000" />
+      <workItem from="1718802239565" duration="7200000" />
+      <workItem from="1718849497598" duration="9050000" />
+      <workItem from="1718976741653" duration="3052000" />
     </task>
     <servers />
   </component>
@@ -94,7 +113,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson3" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
