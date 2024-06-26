@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a1cb93-4149-4aac-bea3-67589ae5531d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson6/src/components/Form/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson6/src/components/Form/Form.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -48,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson6",
+    "git-widget-placeholder": "lesson7",
     "last_opened_file_path": "C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/test1",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -57,7 +55,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,6 +69,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src\components\Rate" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +93,7 @@
       <workItem from="1718849497598" duration="9050000" />
       <workItem from="1718976741653" duration="3052000" />
       <workItem from="1719061931509" duration="6126000" />
+      <workItem from="1719388337297" duration="1677000" />
     </task>
     <servers />
   </component>
@@ -105,7 +111,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson6" />
+                        <option value="lesson7" />
                       </list>
                     </value>
                   </entry>

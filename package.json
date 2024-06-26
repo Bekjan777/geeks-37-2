@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
     "react-hook-form": "^7.52.0",
     "react-select": "^5.8.0",
-    "yap": "^0.0.2"
+    "yap": "^0.0.2",
+    "yup": "^1.4.0"
   }
 }
