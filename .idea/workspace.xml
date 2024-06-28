@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a1cb93-4149-4aac-bea3-67589ae5531d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson7/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson7/src/components/fetch/Fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson7/src/components/fetch/Fetch.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson7/src/components/formAxios/FormAxios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson7/src/components/formAxios/FormAxios.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson7/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson7/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -47,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "lesson7",
-    "last_opened_file_path": "C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/test1",
+    "last_opened_file_path": "C:/Users/pro10/OneDrive/Документы/GitHub/geeks-37-2/lesson7/src/components/formAxios",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,12 +69,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson7\src\components\formAxios" />
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson7\src" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\test1" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src\components\Rate" />
-      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson7" />
+      <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson7\src" />
       <recent name="C:\Users\pro10\OneDrive\Документы\GitHub\geeks-37-2\lesson1\src\components\Rate" />
     </key>
   </component>

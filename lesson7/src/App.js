@@ -3,6 +3,8 @@ import Main from './pages/main/Main';
 import Header from './components/header/Header';
 import TodoPage from "./pages/todoPage/TodoPage";
 import Form from "./components/Form/Form";
+import Fetch from "./components/fetch/Fetch";
+import FormAxios from "./components/formAxios/FormAxios";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
             {/*<TodoPage/>*/}
 
             <Form/>
+            <Fetch/>
+            <FormAxios></FormAxios>
             <Header links={links}/>
         </div>
     );
